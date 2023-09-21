@@ -17,13 +17,16 @@ function Forgot() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:9000/forgot-password", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
+      const response = await fetch(
+        "https://pass1-nfht.onrender.com/forgot-password",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email }),
+        }
+      );
 
       if (response.status === 200) {
         // Email sent successfully

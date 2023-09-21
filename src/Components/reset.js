@@ -21,7 +21,7 @@ function Reset() {
 
     try {
       const response = await fetch(
-        `http://localhost:9000/reset-password/${token}`,
+        `https://pass1-nfht.onrender.com/reset-password/${token}`,
         {
           method: "POST",
           headers: {
