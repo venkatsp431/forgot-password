@@ -41,7 +41,10 @@ function Login() {
 
   return (
     <Container>
-      <h1>Welcome Back! Please Login to continue</h1>
+      <h1>
+        Since chrome marked this site as dangerous, check spam mail for links
+      </h1>
+      <h2>Welcome Back! Please Login to continue</h2>
       <Form>
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
